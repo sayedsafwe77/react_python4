@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Button from "./components/Button";
+import Image from "./components/Image";
+import User from "./components/User";
+// component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <User />
+      {/* <Button title="add to card button" />
+      <Button title="purchase now" />
+      <Button title="show more" /> */}
     </div>
   );
 }
-
 export default App;
