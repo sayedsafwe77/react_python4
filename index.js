@@ -77,18 +77,23 @@
 //   .then((res) => res.json())
 //   .then((data) => console.log(data));
 
-let ob1 = {
-  firstname: "sayed",
-  lastname: "azzam",
-  fullname: function () {
-    console.log(this);
-  },
-};
+// let ob1 = {
+//   firstname: "sayed",
+//   lastname: "azzam",
+//   fullname: function () {
+//     console.log(this);
+//   },
+// };
 
-let ob2 = {
-  firstname: "mohamed",
-  lastname: "amr",
-};
+// let ob2 = {
+//   firstname: "mohamed",
+//   lastname: "amr",
+// };
 
-let fname = ob1.fullname.bind(ob2);
-fname();
+// let fname = ob1.fullname.bind(ob2);
+// fname();
+
+function logName(name) {
+  console.log("welcome" + name);
+}
+logName("ahmed");
